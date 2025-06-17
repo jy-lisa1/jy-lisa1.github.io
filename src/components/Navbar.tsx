@@ -14,7 +14,7 @@ import {
   Divider,
 } from "@mui/material";
 import { useState } from "react";
-import { Link, Link as RouterLink } from "react-router-dom";
+import { Link, Link as RouterLink, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const navItems = [
@@ -24,22 +24,44 @@ const navItems = [
 ];
 
 export default function Navbar() {
+  const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", px: 2 }}>
-      <Box component="img" src="/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
+      <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+        <Box component="img" src="/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
+      </Link>
       <Divider sx={{ borderColor: "grey.400" }} />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding>
-            <ListItemButton component={RouterLink} to={item.path} sx={{ textAlign: "left" }}>
-              <ListItemText primary={item.label} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {navItems.map((item) => {
+          const selected = item.path === pathname;
+          return (
+            <ListItem key={item.label} disablePadding>
+              <ListItemButton
+                component={RouterLink}
+                to={item.path}
+                sx={{
+                  textAlign: "left",
+                }}
+              >
+                <ListItemText
+                  primary={item.label}
+                  slotProps={{
+                    primary: {
+                      fontWeight: selected ? "bold" : "normal",
+                      sx: {
+                        transition: "all 0.3s ease",
+                      },
+                    },
+                  }}
+                />
+              </ListItemButton>
+            </ListItem>
+          );
+        })}
       </List>
     </Box>
   );
@@ -63,11 +85,42 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <Stack direction="row" spacing={2} sx={{ display: { xs: "none", md: "flex" } }}>
-            {navItems.map((item) => (
-              <Button key={item.label} color="inherit" component={RouterLink} to={item.path}>
-                {item.label}
-              </Button>
-            ))}
+            {navItems.map((item) => {
+              const selected = item.path === pathname;
+              return (
+                <Button
+                  key={item.label}
+                  color="inherit"
+                  component={RouterLink}
+                  to={item.path}
+                  sx={{
+                    fontWeight: selected ? "bold" : "normal",
+                    textUnderlineOffset: "4px",
+                    "&:hover .underline": {
+                      width: "100%",
+                    },
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
+                >
+                  {item.label}
+                  <Box
+                    className="underline"
+                    sx={{
+                      position: "absolute",
+                      bottom: 4,
+                      left: 0,
+                      height: "1px",
+                      width: "0%",
+                      backgroundColor: "black",
+                      transformOrigin: "center",
+                      transition: "width 0.3s ease",
+                    }}
+                  />
+                </Button>
+              );
+            })}
           </Stack>
 
           {/* Mobile menu icon */}
@@ -89,7 +142,7 @@ export default function Navbar() {
         onClose={handleDrawerToggle}
         ModalProps={{ keepMounted: true }}
         sx={{
-          display: { xs: "block", sm: "none" },
+          display: { xs: "block" },
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },
         }}
       >

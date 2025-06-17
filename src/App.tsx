@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import { Box } from "@mui/material";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyContent: "space-between",
           minHeight: "100vh",
-          width: "100vw", // make sure it spans full width
-          overflowX: "hidden", // prevent unwanted scroll
+          width: "100vw",
+          overflowX: "hidden",
         }}
       >
         <Navbar />
@@ -33,6 +35,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </Box>
+        <Footer />
       </Box>
     </Router>
   );

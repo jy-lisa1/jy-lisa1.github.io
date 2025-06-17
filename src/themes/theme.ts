@@ -26,7 +26,7 @@ let theme = createTheme({
       fontFamily: "Josefin Sans Variable",
     },
     h4: {
-      fontWeight: 300,
+      fontWeight: 400,
       fontSize: "1.75rem", // 28px
       letterSpacing: "-0.5px",
       fontFamily: "Josefin Sans Variable",
