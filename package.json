@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jy-lisa1.github.io/lisas-site",
+  "homepage": "https://jy-lisa1.github.io",
   "scripts": {
     "start": "npm run start:fix && vite",
     "start:fix": "rmdir /s /q node_modules\\.vite",
@@ -11,7 +11,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prettier:format": "prettier --write src"
+    "prettier:format": "prettier --write src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
