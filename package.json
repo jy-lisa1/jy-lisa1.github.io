@@ -1,8 +1,9 @@
 {
-  "name": "my-site",
+  "name": "lisas-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jy-lisa1.github.io/lisas-site",
   "scripts": {
     "start": "npm run start:fix && vite",
     "start:fix": "rmdir /s /q node_modules\\.vite",
@@ -17,6 +18,7 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource-variable/josefin-sans": "^5.2.6",
     "@fontsource/dejavu-math": "^5.2.5",
+    "@fontsource/josefin-sans": "^5.2.6",
     "@fontsource/oxygen": "^5.2.6",
     "@mui/icons-material": "^7.1.1",
     "@mui/material": "^7.1.1",
