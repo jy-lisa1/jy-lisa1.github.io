@@ -1,7 +1,6 @@
 import { Box, Stack, Typography, Grid, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { useNavbarHeight } from "../components/NavbarHeightContext";
 
 function Description() {
   return (
