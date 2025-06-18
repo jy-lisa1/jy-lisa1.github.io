@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, Grid, Button, Container, Drawer } from "@mui/material";
+import { Box, Stack, Typography, Grid, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { useNavbarHeight } from "../components/NavbarHeightContext";
@@ -28,8 +28,6 @@ function Description() {
 }
 
 export default function About() {
-  const navbarHeight = useNavbarHeight();
-
   return (
     <Grid container sx={{ minHeight: "100%", pt: 1, mb: -4 }}>
       <Grid size={{ xs: 12, md: 7 }}>
