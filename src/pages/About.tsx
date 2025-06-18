@@ -1,6 +1,7 @@
-import { Box, Stack, Typography, Grid, Button } from "@mui/material";
+import { Box, Stack, Typography, Grid, Button, Container, Drawer } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { useNavbarHeight } from "../components/NavbarHeightContext";
 
 function Description() {
   return (
@@ -27,8 +28,10 @@ function Description() {
 }
 
 export default function About() {
+  const navbarHeight = useNavbarHeight();
+
   return (
-    <Grid container sx={{ minHeight: "100%" }}>
+    <Grid container sx={{ minHeight: "100%", pt: 1, mb: -4 }}>
       <Grid size={{ xs: 12, md: 7 }}>
         <Box sx={{ p: { md: 6, xs: 2 }, pr: { md: 10 } }}>
           <Stack direction="row" spacing={2} alignItems="center" sx={{ pb: 2 }}>
@@ -68,7 +71,7 @@ export default function About() {
           </Box>
         </Box>
       </Grid>
-      <Grid size={{ xs: 12, md: 5 }}>
+      <Grid size={{ xs: 12, md: 5 }} sx={{ minHeight: "100%" }}>
         <Box
           component="img"
           src="/me/pingu.jpg"
@@ -77,8 +80,9 @@ export default function About() {
             mt: -1,
             width: "100%",
             height: "100%",
-            objectFit: "cover",
-            display: "block",
+            // objectFit: "cover",
+            // display: "block",
+            // top: navbarHeight,
           }}
         />
       </Grid>

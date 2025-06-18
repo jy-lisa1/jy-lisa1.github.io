@@ -1,42 +1,59 @@
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 export default function Home() {
   return (
-    <Container sx={{ mt: 16 }}>
-      <Stack>
-        <Stack direction="row" spacing={2} alignItems="center" sx={{ pb: 2 }}>
-          <Typography variant="h1" gutterBottom>
-            Hello!
+    <Grid container>
+      <Grid size={{ xs: 12, md: 5 }}>
+        <Box sx={{ pt: { md: 20, xs: 10 }, pl: { md: 12, xs: 0 }, px: { xs: 6 } }}>
+          <Box display="flex" alignItems="center" justifySelf={"center"}>
+            <Typography variant="h1" gutterBottom>
+              Hello!
+            </Typography>
+            <Box
+              component="img"
+              src="/cat_laying.png"
+              sx={{
+                width: { md: 55, xs: 45 },
+                height: { md: 55, xs: 45 },
+                position: "relative",
+                top: { md: "-18px", xs: "-12px" },
+                left: 4,
+              }}
+            />
+          </Box>
+          <Typography variant="h3" sx={{ py: 4 }} justifySelf={"center"}>
+            I'm Lisa - Thanks for visiting my site :)
           </Typography>
-          <Box
-            component="img"
-            src="/cat_sitting.png"
-            sx={{
-              width: 55,
-              height: 55,
-              position: "relative",
-              top: "-6px",
-            }}
-          />
-        </Stack>
-        <Typography variant="h3" sx={{ py: 4 }}>
-          I'm Lisa - Thanks for visiting my site :)
-        </Typography>
-        <Typography variant="h3">Come take a look at what I'm up to!</Typography>
-        <Box sx={{ pt: 8 }}>
-          <Button
-            endIcon={<KeyboardDoubleArrowRightIcon />}
-            color="inherit"
-            variant="outlined"
-            component={RouterLink}
-            to={"/projects"}
-          >
-            I wanna see!
-          </Button>
+          <Typography variant="h3" justifySelf={"center"}>
+            Come take a look at what I'm up to!
+          </Typography>
+          <Box sx={{ pt: { md: 8, xs: 4 } }} justifySelf={"center"}>
+            <Button
+              endIcon={<KeyboardDoubleArrowRightIcon />}
+              color="inherit"
+              variant="outlined"
+              component={RouterLink}
+              to={"/projects"}
+            >
+              I wanna see!
+            </Button>
+          </Box>
         </Box>
-      </Stack>
-    </Container>
+      </Grid>
+      <Grid size={{ xs: 12, md: 7 }}>
+        <Box
+          component="img"
+          src="/me/pingu.png"
+          alt="Me"
+          sx={{
+            width: "100%",
+            height: "100%",
+            pt: 4,
+          }}
+        />
+      </Grid>
+    </Grid>
   );
 }

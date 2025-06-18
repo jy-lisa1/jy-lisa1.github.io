@@ -24,7 +24,6 @@ function App() {
           component="main"
           sx={{
             flexGrow: 1,
-            p: 2,
             width: "100%",
             maxWidth: "100%",
           }}
