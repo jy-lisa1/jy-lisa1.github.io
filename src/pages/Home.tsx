@@ -4,11 +4,23 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 
 export default function Home() {
   return (
-    <Container sx={{ mt: 4 }}>
+    <Container sx={{ mt: 16 }}>
       <Stack>
-        <Typography variant="h1" gutterBottom>
-          Hello!
-        </Typography>
+        <Stack direction="row" spacing={2} alignItems="center" sx={{ pb: 2 }}>
+          <Typography variant="h1" gutterBottom>
+            Hello!
+          </Typography>
+          <Box
+            component="img"
+            src="/cat_sitting.png"
+            sx={{
+              width: 55,
+              height: 55,
+              position: "relative",
+              top: "-6px",
+            }}
+          />
+        </Stack>
         <Typography variant="h3" sx={{ py: 4 }}>
           I'm Lisa - Thanks for visiting my site :)
         </Typography>

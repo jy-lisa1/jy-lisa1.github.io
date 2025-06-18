@@ -72,7 +72,7 @@ export default function Navbar() {
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             <Stack direction="row" alignItems="center" spacing={1}>
-              <Box component="img" src="/cute_cat.png" sx={{ width: 50, height: "auto" }} />
+              <Box component="img" src="/peeking_cat.png" sx={{ width: 50, height: "auto" }} />
               <Typography
                 noWrap
                 variant="h4"

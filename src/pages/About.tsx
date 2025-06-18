@@ -31,9 +31,21 @@ export default function About() {
     <Grid container sx={{ minHeight: "100%" }}>
       <Grid size={{ xs: 12, md: 7 }}>
         <Box sx={{ p: { md: 6, xs: 2 }, pr: { md: 10 } }}>
-          <Typography variant="h2" gutterBottom>
-            About Me
-          </Typography>
+          <Stack direction="row" spacing={2} alignItems="center" sx={{ pb: 2 }}>
+            <Typography variant="h2" sx={{ lineHeight: 1 }}>
+              About Me
+            </Typography>
+            <Box
+              component="img"
+              src="/cat_sitting.png"
+              sx={{
+                width: 50,
+                height: 50,
+                position: "relative",
+                top: "-4px",
+              }}
+            />
+          </Stack>
           <Description />
           <Box
             sx={{
