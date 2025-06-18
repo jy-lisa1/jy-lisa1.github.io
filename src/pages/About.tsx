@@ -29,8 +29,20 @@ function Description() {
 export default function About() {
   return (
     <Grid container sx={{ minHeight: "100%", pt: 1, mb: -4 }}>
-      <Grid size={{ xs: 12, md: 7 }}>
-        <Box sx={{ p: { md: 6, xs: 2 }, pr: { md: 10 } }}>
+      <Grid size={{ xs: 12, md: 5 }} sx={{ minHeight: "100%" }} order={{ xs: 2, md: 1 }}>
+        <Box
+          component="img"
+          src="/me/suzhou.JPG"
+          alt="Me"
+          sx={{
+            mt: -1,
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 7 }} order={{ xs: 1, md: 2 }}>
+        <Box sx={{ px: { md: 10, xs: 4 }, py: { md: 6, xs: 4 } }}>
           <Stack direction="row" spacing={2} alignItems="center" sx={{ pb: 2 }}>
             <Typography variant="h2" sx={{ lineHeight: 1 }}>
               About Me
@@ -67,21 +79,6 @@ export default function About() {
             </Button>
           </Box>
         </Box>
-      </Grid>
-      <Grid size={{ xs: 12, md: 5 }} sx={{ minHeight: "100%" }}>
-        <Box
-          component="img"
-          src="/me/pingu.jpg"
-          alt="Me"
-          sx={{
-            mt: -1,
-            width: "100%",
-            height: "100%",
-            // objectFit: "cover",
-            // display: "block",
-            // top: navbarHeight,
-          }}
-        />
       </Grid>
     </Grid>
   );
