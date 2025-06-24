@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
+import UnderConstruction from "../components/UnderConstruction";
 
 export default function Projects() {
   return (
@@ -6,22 +7,7 @@ export default function Projects() {
       <Typography variant="h2" gutterBottom>
         My Projects
       </Typography>
-      <Typography>Work in progress...</Typography>
-      <Box
-        component="img"
-        src="/under_construction.png"
-        alt="Under construction"
-        sx={{
-          width: "100%",
-          height: "auto",
-          maxWidth: {
-            xs: "100%",
-            md: 500,
-          },
-          mx: "auto",
-          display: "block",
-        }}
-      />
+      <UnderConstruction />
     </Container>
   );
 }

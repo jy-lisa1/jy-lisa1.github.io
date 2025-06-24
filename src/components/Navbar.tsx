@@ -51,6 +51,9 @@ export default function Navbar() {
       <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
         <Box component="img" src="/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
       </Link>
+      <Typography variant="h4" sx={{ pb: 2 }}>
+        LISA JING-YANG ZHANG
+      </Typography>
       <Divider sx={{ borderColor: "grey.400" }} />
       <List>
         {navItems.map((item) => {
