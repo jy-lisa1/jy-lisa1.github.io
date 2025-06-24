@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import UnderConstruction from "../components/UnderConstruction";
 
 export default function Projects() {
