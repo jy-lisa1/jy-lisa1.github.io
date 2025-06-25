@@ -32,6 +32,19 @@ export const recentPaintings: GalleryItem[] = [
     referenceLink: "https://ca.pinterest.com/pin/300967187622135506/",
     size: "16 x 20",
     notes:
-      "My first painting of 2025! I love the way the sunlight glows in the orange part of the clouds.",
+      "My first painting of 2025 - I love the way the sunlight glows in the orange part of the clouds.",
+  },
+  {
+    path: "/recent_paintings/ghibli_sunset.jpg",
+    title: "Sunset over fields",
+    date: "July 2024",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/300967187622135515/",
+    size: "16 x 20",
+    notes: `My first painting in almost 4 years! I was too lazy and unmotivated to make anything 
+        during uni. This scene is apparently from Nausicaa Valley of the Wind - I loved the movie, 
+        but I don't remember it. I decided to recreate this painting instead of making something original to ease 
+        my transition into doing art again after my 4 year gap.`,
   },
 ];

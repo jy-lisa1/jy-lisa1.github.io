@@ -26,7 +26,7 @@ export default function ProjectTypePanel(props: ProjectTypePanelProps) {
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
         }}
       />
 
