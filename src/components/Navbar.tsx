@@ -49,7 +49,7 @@ export default function Navbar() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", px: 2 }}>
       <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-        <Box component="img" src="/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
+        <Box component="img" src="/icons/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
       </Link>
       <Typography variant="h4" sx={{ pb: 2 }}>
         LISA JING-YANG ZHANG
@@ -94,7 +94,11 @@ export default function Navbar() {
             <Toolbar sx={{ justifyContent: "space-between" }}>
               <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                 <Stack direction="row" alignItems="center" spacing={1}>
-                  <Box component="img" src="/peeking_cat.png" sx={{ width: 50, height: "auto" }} />
+                  <Box
+                    component="img"
+                    src="/icons/peeking_cat.png"
+                    sx={{ width: 50, height: "auto" }}
+                  />
                   <Typography
                     noWrap
                     variant="h4"

@@ -13,7 +13,7 @@ export default function Home() {
             </Typography>
             <Box
               component="img"
-              src="/cat_laying.png"
+              src="/icons/cat_laying.png"
               sx={{
                 width: { md: 55, xs: 45 },
                 height: { md: 55, xs: 45 },

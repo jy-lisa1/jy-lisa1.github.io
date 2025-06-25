@@ -19,7 +19,7 @@ function Description() {
       </Typography>
       <Typography>
         I mostly paint in oil, but also dabble in acrylic, gouache, and markers. Besides painting, I
-        also love experimenting with different materials like wood, paper, and leather. Feel free to
+        also love experimenting with different materials like wood, wool, and leather. Feel free to
         check out some of my work!
       </Typography>
     </Stack>
@@ -49,7 +49,7 @@ export default function About() {
             </Typography>
             <Box
               component="img"
-              src="/cat_sitting.png"
+              src="/icons/cat_sitting.png"
               sx={{
                 width: 50,
                 height: 50,

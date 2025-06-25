@@ -5,6 +5,9 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import { Box } from "@mui/material";
 import Footer from "./components/Footer";
+import Paintings from "./pages/Paintings";
+import Carvings from "./pages/Carvings";
+import Other from "./pages/Other";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/paintings" element={<Paintings />} />
+            <Route path="/projects/carvings" element={<Carvings />} />
+            <Route path="/projects/other" element={<Other />} />
           </Routes>
         </Box>
         <Footer />
