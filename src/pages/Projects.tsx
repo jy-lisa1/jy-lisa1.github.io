@@ -1,5 +1,4 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
-import UnderConstruction from "../components/UnderConstruction";
 import ProjectTypePanel, {
   type ProjectTypePanelProps,
 } from "../components/projects/ProjectTypePanel";
