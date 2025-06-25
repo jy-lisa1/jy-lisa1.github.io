@@ -17,8 +17,9 @@ import { useEffect, useRef, useState } from "react";
 import { Link, Link as RouterLink, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavbarHeightContext } from "./NavbarHeightContext";
+import NavDrawer from "./NavDrawer";
 
-const navItems = [
+export const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Projects", path: "/projects" },
@@ -45,46 +46,6 @@ export default function Navbar() {
       return () => resizeObserver.disconnect();
     }
   }, []);
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", px: 2 }}>
-      <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-        <Box component="img" src="/icons/cute_cat.png" sx={{ width: 100, height: "auto", pt: 4 }} />
-      </Link>
-      <Typography variant="h4" sx={{ pb: 2 }}>
-        LISA JING-YANG ZHANG
-      </Typography>
-      <Divider sx={{ borderColor: "grey.400" }} />
-      <List>
-        {navItems.map((item) => {
-          const selected = item.path === pathname;
-          return (
-            <ListItem key={item.label} disablePadding>
-              <ListItemButton
-                component={RouterLink}
-                to={item.path}
-                sx={{
-                  textAlign: "left",
-                }}
-              >
-                <ListItemText
-                  primary={item.label}
-                  slotProps={{
-                    primary: {
-                      fontWeight: selected ? "bold" : "normal",
-                      sx: {
-                        transition: "all 0.3s ease",
-                      },
-                    },
-                  }}
-                />
-              </ListItemButton>
-            </ListItem>
-          );
-        })}
-      </List>
-    </Box>
-  );
 
   return (
     <>
@@ -161,19 +122,11 @@ export default function Navbar() {
             </Toolbar>
           </AppBar>
 
-          {/* Mobile drawer */}
-          <Drawer
-            anchor="left"
+          <NavDrawer
+            handleDrawerToggle={handleDrawerToggle}
+            pathName={pathname}
             open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{ keepMounted: true }}
-            sx={{
-              display: { xs: "block" },
-              "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },
-            }}
-          >
-            {drawer}
-          </Drawer>
+          />
         </Box>
       </NavbarHeightContext.Provider>
     </>

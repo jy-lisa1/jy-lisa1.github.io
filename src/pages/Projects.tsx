@@ -11,8 +11,8 @@ const projectPages: ProjectTypePanelProps[] = [
     projectType: "paintings",
   },
   {
-    title: "Block Printing",
-    description: "One of my new discoveries.",
+    title: "Carvings",
+    description: "Aka block printing - one of my new discoveries.",
     imagePath: "url('/carve.jpg')",
     projectType: "carvings",
   },
@@ -50,7 +50,7 @@ export default function Projects() {
           return (
             <Grid size={{ xs: 12, md: 4 }} key={page.projectType}>
               <ProjectTypePanel
-                title={page.projectType}
+                title={page.title}
                 description={page.description}
                 imagePath={page.imagePath}
                 projectType={page.projectType}
