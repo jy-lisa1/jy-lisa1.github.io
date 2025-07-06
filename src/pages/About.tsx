@@ -11,16 +11,21 @@ function Description() {
         to document my creative work and share a bit of the process behind it.
       </Typography>
       <Typography>
-        I've loved making art since I was a kid, and it's when I feel most like myself. I prefer
+        I've loved making art since I was a kid, and it's when I feel the happiest. I prefer
         traditional art over digital because of the physical connection - feeling the texture of the
         substrate, the weight of the tools, and the hands-on process of creating something beautiful
         and tangible. I'm by no means a professional - I have no formal training beyond art class
         during primary school, but I learn a lot from TikTok :)
       </Typography>
       <Typography>
-        I mostly paint in oil, but also dabble in acrylic, gouache, and markers. Besides painting, I
-        also love experimenting with different materials like wood, wool, and leather. Feel free to
-        check out some of my work!
+        When I'm not busy making something, you'll find me indulging in some of my other favourite
+        hobbies: collecting & sampling perfumes, playing piano, gambling on blind boxes, having a
+        yummy drink, and doomscrolling while rotting in bed.
+      </Typography>
+      <Typography>
+        As for my art - I mostly paint in oil, but also dabble in acrylic, gouache, and markers.
+        Besides painting, I also love experimenting with different materials like wood, wool, and
+        leather. Feel free to check out some of my work!
       </Typography>
     </Stack>
   );
