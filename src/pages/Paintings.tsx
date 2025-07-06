@@ -1,15 +1,10 @@
-import {
-  Container,
-  Divider,
-  ImageList,
-  ImageListItem,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Container, Divider, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { recentPaintings } from "../data/recentPaintings";
 import { oldPaintings } from "../data/oldPaintings";
 import type { GalleryItem } from "../data/galleryItem";
+import { useState } from "react";
+import ProjectDetails from "../components/projects/ProjectDetails";
+import GalleryImageList from "../components/projects/GalleryImageList";
 
 function getEveryNth(list: GalleryItem[], n: number, m: number) {
   return list.filter((_, index) => (index - m) % n === 0 && index >= m);
@@ -28,8 +23,16 @@ export default function Paintings() {
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isXs ? 1 : 2;
 
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<GalleryItem | undefined>(undefined);
+
   const recentPaintingsOrdered = reorderPaintings(cols, recentPaintings);
   const oldPaintingsOrdered = reorderPaintings(cols + 1, oldPaintings);
+
+  function handleImageClick(item: GalleryItem) {
+    setDialogOpen(true);
+    setSelectedItem(item);
+  }
 
   return (
     <Container sx={{ py: 4 }}>
@@ -38,28 +41,35 @@ export default function Paintings() {
         These are my most recent paintings, done in the past year. Click on each one for more
         details!
       </Typography>
-      <ImageList variant="masonry" cols={cols} gap={20} sx={{ px: { md: 20, xs: 0 }, py: 2 }}>
-        {recentPaintingsOrdered.map((item) => (
-          <ImageListItem key={item.title}>
-            <img src={`${item.path}?w=248&fit=crop&auto=format`} alt={item.title} loading="lazy" />
-          </ImageListItem>
-        ))}
-      </ImageList>
+      <GalleryImageList
+        cols={cols}
+        items={recentPaintingsOrdered}
+        handleImageClick={handleImageClick}
+      />
 
       <Divider sx={{ borderWidth: "1px", my: 4 }} />
 
       <Typography variant="h2">Older Paintings</Typography>
       <Typography variant="h5">
         These are some paintings, in no particular order, from my teenage years. What a throwback!
-        Dates are missing from most of these because I genuinely don't remember.
+        Dates are missing from most of these because I don't really remember.
       </Typography>
-      <ImageList variant="masonry" cols={cols + 1} gap={20} sx={{ py: 2 }}>
-        {oldPaintingsOrdered.map((item) => (
-          <ImageListItem key={item.title}>
-            <img src={`${item.path}?w=248&fit=crop&auto=format`} alt={item.title} loading="lazy" />
-          </ImageListItem>
-        ))}
-      </ImageList>
+      <GalleryImageList
+        cols={cols + 1}
+        items={oldPaintingsOrdered}
+        handleImageClick={handleImageClick}
+      />
+
+      {selectedItem && (
+        <ProjectDetails
+          item={selectedItem}
+          open={dialogOpen}
+          onClose={() => {
+            setDialogOpen(false);
+            setSelectedItem(undefined);
+          }}
+        />
+      )}
     </Container>
   );
 }

@@ -1,7 +1,7 @@
 import type { GalleryItem } from "./galleryItem";
 
-const HIGH_SCHOOL = "Some time in high school (2016-2020)";
-const MIDDLE_SCHOOL = "Some time in middle school (2014-2016)";
+const HIGH_SCHOOL = "Sometime in high school (2016-2020)";
+const MIDDLE_SCHOOL = "Sometime in middle school (2014-2016)";
 const OIL = "Oil";
 const ACRYLIC = "Acrylic";
 const GOUACHE = "Gouache";
@@ -71,6 +71,15 @@ export const oldPaintings: GalleryItem[] = [
     consuming to achieve this effect with acrylics, but I hadn't learned oil at the time.`,
   },
   {
+    path: "/old_paintings/ghibli_yard.jpg",
+    title: "Another Ghibli scene",
+    date: HIGH_SCHOOL,
+    medium: ACRYLIC,
+    referenceSource: "Ghibli movie.",
+    size: "12 x 12",
+    notes: `Not a huge fan of this one. I painted it to match the other square Ghibli scene.`,
+  },
+  {
     path: "/old_paintings/plant_leaves.jpg",
     title: "Plants",
     date: HIGH_SCHOOL,
@@ -118,7 +127,7 @@ export const oldPaintings: GalleryItem[] = [
     medium: GOUACHE,
     referenceSource: "Pinterest",
     size: "4 x 6",
-    notes: `A small painting that I hung in my tiny Montreal apartment.`,
+    notes: `A small painting that kept me company in my tiny Montreal apartment.`,
   },
   {
     path: "/old_paintings/autumn.jpg",
@@ -148,14 +157,5 @@ export const oldPaintings: GalleryItem[] = [
     size: "15-ish cm across",
     notes: `Painted this at Art Haven. I honestly liked the colours better before the piece was fired in
     the oven, but it still looks pretty cute. I'm using it to display some of my perfumes right now.`,
-  },
-  {
-    path: "/old_paintings/ghibli_yard.jpg",
-    title: "Another Ghibli scene",
-    date: HIGH_SCHOOL,
-    medium: ACRYLIC,
-    referenceSource: "Ghibli movie.",
-    size: "12 x 12",
-    notes: `Not a huge fan of this one. I painted it to match the other square Ghibli scene.`,
   },
 ];
