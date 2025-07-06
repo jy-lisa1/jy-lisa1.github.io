@@ -54,29 +54,15 @@ export default function ProjectDetails({ item, open, onClose }: Readonly<Props>)
             borderRadius: 1,
           }}
         />
-        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-          <Box>
-            <Typography sx={{ pt: 2 }}>
-              <b>Date:</b> {item.date}
-            </Typography>
-            <Typography>
-              <b>Medium:</b> {item.medium}
-            </Typography>
-            <Typography sx={{ pb: 2 }}>
-              <b>Size:</b> {item.size}
-            </Typography>
-          </Box>
-
-          <Box
-            component="img"
-            src="/icons/cat_wand.png"
-            sx={{
-              height: "100%",
-              maxHeight: 100,
-              width: "auto",
-            }}
-          />
-        </Box>
+        <Typography sx={{ pt: 2 }}>
+          <b>Date:</b> {item.date}
+        </Typography>
+        <Typography>
+          <b>Medium:</b> {item.medium}
+        </Typography>
+        <Typography sx={{ pb: 2 }}>
+          <b>Size:</b> {item.size}
+        </Typography>
         <Divider />
         <Typography sx={{ py: 2 }}>{item.notes}</Typography>
       </DialogContent>
