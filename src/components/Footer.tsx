@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -11,7 +12,15 @@ export default function Footer() {
         bgcolor: "primary.main",
       }}
     >
-      © {new Date().getFullYear()} Jing-Yang Zhang. All rights reserved.
+      <Box>© {new Date().getFullYear()} Jing-Yang Zhang. All rights reserved.</Box>
+      <Box>
+        <Link to="/attributions" style={{ color: "inherit", marginRight: 12 }}>
+          Attributions
+        </Link>
+        <Link to="/contact" style={{ color: "inherit" }}>
+          Contact
+        </Link>
+      </Box>
     </Box>
   );
 }

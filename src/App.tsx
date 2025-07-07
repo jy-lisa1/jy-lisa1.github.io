@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Paintings from "./pages/Paintings";
 import Carvings from "./pages/Carvings";
 import Other from "./pages/Other";
+import Attributions from "./pages/Attributions";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
             <Route path="/projects/paintings" element={<Paintings />} />
             <Route path="/projects/carvings" element={<Carvings />} />
             <Route path="/projects/other" element={<Other />} />
+            <Route path="/attributions" element={<Attributions />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Box>
         <Footer />
