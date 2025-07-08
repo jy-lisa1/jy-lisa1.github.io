@@ -7,9 +7,13 @@ import {
   ListItemButton,
   ListItemText,
   Drawer,
+  Collapse,
+  IconButton,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { navItems } from "./Navbar";
+import { useState } from "react";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 type Props = {
   handleDrawerToggle: () => void;
@@ -18,6 +22,8 @@ type Props = {
 };
 
 export default function NavDrawer({ handleDrawerToggle, pathName, open }: Props) {
+  const [openProjects, setOpenProjects] = useState(false);
+
   return (
     <Drawer
       anchor="left"
@@ -51,16 +57,75 @@ export default function NavDrawer({ handleDrawerToggle, pathName, open }: Props)
         <Divider sx={{ borderColor: "grey.400" }} />
         <List>
           {navItems.map((item) => {
-            const selected = item.path === pathName;
+            const selected = pathName === item.path && pathName != "/projects";
+
+            if (item.subItems) {
+              return (
+                <Box key={item.label}>
+                  <ListItem
+                    disablePadding
+                    secondaryAction={
+                      <IconButton
+                        edge="end"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setOpenProjects((prev) => !prev);
+                        }}
+                      >
+                        {openProjects ? <ExpandLess /> : <ExpandMore />}
+                      </IconButton>
+                    }
+                  >
+                    <ListItemButton component={Link} to={item.path} sx={{ textAlign: "left" }}>
+                      <ListItemText
+                        primary={item.label}
+                        slotProps={{
+                          primary: {
+                            fontWeight: selected ? "bold" : "normal",
+                            sx: {
+                              transition: "all 0.3s ease",
+                            },
+                          },
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+
+                  <Collapse in={openProjects} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                      {item.subItems.map((subItem) => {
+                        const childSelected = pathName === subItem.path;
+                        return (
+                          <ListItem key={subItem.label} disablePadding>
+                            <ListItemButton
+                              component={Link}
+                              to={subItem.path}
+                              sx={{ pl: 4, textAlign: "left" }}
+                            >
+                              <ListItemText
+                                primary={subItem.label}
+                                slotProps={{
+                                  primary: {
+                                    fontWeight: childSelected ? "bold" : "normal",
+                                    sx: {
+                                      transition: "all 0.3s ease",
+                                    },
+                                  },
+                                }}
+                              />
+                            </ListItemButton>
+                          </ListItem>
+                        );
+                      })}
+                    </List>
+                  </Collapse>
+                </Box>
+              );
+            }
+
             return (
               <ListItem key={item.label} disablePadding>
-                <ListItemButton
-                  component={Link}
-                  to={item.path}
-                  sx={{
-                    textAlign: "left",
-                  }}
-                >
+                <ListItemButton component={Link} to={item.path} sx={{ textAlign: "left" }}>
                   <ListItemText
                     primary={item.label}
                     slotProps={{

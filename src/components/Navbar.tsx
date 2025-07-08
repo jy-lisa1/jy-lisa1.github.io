@@ -8,7 +8,16 @@ import NavDrawer from "./NavDrawer";
 export const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Projects", path: "/projects" },
+  {
+    label: "Projects",
+    path: "/projects",
+    subItems: [
+      { label: "View All", path: "/projects" },
+      { label: "Paintings", path: "/projects/paintings" },
+      { label: "Carvings", path: "/projects/carvings" },
+      { label: "Other", path: "/projects/other" },
+    ],
+  },
 ];
 
 export default function Navbar() {
@@ -59,7 +68,8 @@ export default function Navbar() {
               {/* Desktop nav */}
               <Stack direction="row" spacing={2} sx={{ display: { xs: "none", md: "flex" } }}>
                 {navItems.map((item) => {
-                  const selected = item.path === pathname;
+                  const selected =
+                    item.path === pathname || (item.path != "/" && pathname.includes(item.path));
                   return (
                     <Button
                       key={item.label}
