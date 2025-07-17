@@ -10,6 +10,7 @@ import Carvings from "./pages/Carvings";
 import Other from "./pages/Other";
 import Attributions from "./pages/Attributions";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             maxWidth: "100%",
           }}
         >
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
