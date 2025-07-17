@@ -55,14 +55,7 @@ export default function Navbar() {
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
-  const menuRef = useRef<HTMLDivElement | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLElement>) => {
@@ -70,15 +63,18 @@ export default function Navbar() {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleMouseLeave = () => {
+  const handleDelayedClose = () => {
     timeoutRef.current = setTimeout(() => {
-      if (!menuRef.current?.matches(":hover")) {
-        setAnchorEl(null);
-      }
-    }, 200);
+      setAnchorEl(null);
+    }, 150);
   };
 
-  const handleMenuLeave = () => {
+  const cancelClose = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  };
+
+  const handleClose = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setAnchorEl(null);
   };
 
@@ -111,9 +107,9 @@ export default function Navbar() {
             <Stack direction="row" spacing={2} sx={{ display: { xs: "none", md: "flex" } }}>
               {navItems.map((item) => {
                 const selected =
-                  item.path === pathname || (item.path != "/" && pathname.includes(item.path));
-                return (
-                  item.path !== "/projects" && (
+                  item.path === pathname || (item.path !== "/" && pathname.includes(item.path));
+                if (item.path !== "/projects") {
+                  return (
                     <Button
                       key={item.label}
                       color="inherit"
@@ -133,16 +129,15 @@ export default function Navbar() {
                       {item.label}
                       <Underline />
                     </Button>
-                  )
-                );
+                  );
+                }
+                return null;
               })}
-              <Box
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                sx={{ display: "inline-block" }}
-              >
+
+              <Box onMouseEnter={cancelClose} onMouseLeave={handleDelayedClose}>
                 <Button
                   color="inherit"
+                  onMouseEnter={handleMouseEnter}
                   sx={{
                     fontWeight: pathname.includes("projects") ? "bold" : "normal",
                     textUnderlineOffset: "4px",
@@ -154,29 +149,29 @@ export default function Navbar() {
                     },
                   }}
                   endIcon={anchorEl ? <ExpandLess /> : <ExpandMore />}
-                  onClick={handleClick}
                 >
                   Projects
                 </Button>
+
                 <Menu
                   id="hover-menu"
                   anchorEl={anchorEl}
                   open={open}
-                  onClose={handleMenuLeave}
-                  slotProps={{
-                    list: {
-                      onMouseLeave: handleMenuLeave,
-                      ref: menuRef,
-                    },
-                  }}
+                  onClose={handleClose}
+                  onMouseEnter={cancelClose}
+                  onMouseLeave={handleDelayedClose}
                   anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
                   transformOrigin={{ vertical: "top", horizontal: "left" }}
-                  disableAutoFocusItem
+                  disableAutoFocus
+                  disableEnforceFocus
+                  disableScrollLock
+                  MenuListProps={{ autoFocusItem: false }}
                 >
                   {projectTypes.map((project) => {
                     const selected = pathname === project.path;
                     return (
                       <MenuItem
+                        key={project.label}
                         component={RouterLink}
                         to={project.path}
                         onClick={handleClose}
