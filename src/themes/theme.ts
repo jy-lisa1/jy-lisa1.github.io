@@ -50,8 +50,8 @@ let theme = createTheme({
       fontFamily: "Oxygen",
     },
     subtitle2: {
-      fontWeight: 400,
-      fontSize: "1.25rem", // 20px
+      fontWeight: 600,
+      fontSize: "1rem",
       letterSpacing: "0.1px",
       fontFamily: "Oxygen",
     },
@@ -84,6 +84,25 @@ let theme = createTheme({
       fontSize: "0.75rem", // 12px
       letterSpacing: "1.5px",
       fontFamily: "Oxygen",
+    },
+  },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#F59816",
+          textDecoration: "underline",
+          textDecorationColor: "#F59816",
+          "&:hover": {
+            color: "#d17f00",
+            textDecorationColor: "#d17f00",
+          },
+        },
+      },
+      defaultProps: {
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
     },
   },
 });
