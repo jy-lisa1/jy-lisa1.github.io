@@ -30,16 +30,6 @@ export const oldPaintings: GalleryItem[] = [
       I love Monet paintings and I tried to emulate some of his vibes, without a reference photo.`,
   },
   {
-    path: "/old_paintings/venice.jpg",
-    title: "Venice",
-    date: "July 2024",
-    medium: OIL,
-    referenceSource: "My camera album after my 2019 Europe trip",
-    size: "20 x 24",
-    notes: `Venice was my favourite part of my Italy trip. I went during a heat wave, and it was the 
-        only place I visited where it wasn't 40 degrees.`,
-  },
-  {
     path: "/old_paintings/flowers_and_grapes.jpg",
     title: "Flowers",
     date: HIGH_SCHOOL,
@@ -61,25 +51,6 @@ export const oldPaintings: GalleryItem[] = [
     It sat, unfinished and neglected in the basement, for years.`,
   },
   {
-    path: "/old_paintings/ghibli_column.jpg",
-    title: "Ghibli Courtyard",
-    date: HIGH_SCHOOL,
-    medium: ACRYLIC,
-    referenceSource: "Pinterest",
-    size: "12 x 12",
-    notes: `One of my favourite recreations! I love how the water turned out - it was pretty hard and time 
-    consuming to achieve this effect with acrylics, but I hadn't learned oil at the time.`,
-  },
-  {
-    path: "/old_paintings/ghibli_yard.jpg",
-    title: "Another Ghibli scene",
-    date: HIGH_SCHOOL,
-    medium: ACRYLIC,
-    referenceSource: "Ghibli movie.",
-    size: "12 x 12",
-    notes: `Not a huge fan of this one. I painted it to match the other square Ghibli scene.`,
-  },
-  {
     path: "/old_paintings/plant_leaves.jpg",
     title: "Plants",
     date: HIGH_SCHOOL,
@@ -97,6 +68,45 @@ export const oldPaintings: GalleryItem[] = [
     referenceSource: "Google Images - I can't find the original photo anymore.",
     size: "14 x 18",
     notes: `I finished this one in one sitting! It's one of my dad's favourites.`,
+  },
+  {
+    path: "/old_paintings/sunset_old.jpg",
+    title: "Another sunset",
+    date: HIGH_SCHOOL,
+    medium: OIL,
+    referenceSource: "Pinterest",
+    size: "16 x 20",
+    notes: `Another quick one. I got real lazy with the foreground but I love the colour of the sky, 
+    and the light peeking out from behind the cliffs.`,
+  },
+  {
+    path: "/old_paintings/venice.jpg",
+    title: "Venice",
+    date: "July 2024",
+    medium: OIL,
+    referenceSource: "My camera album after my 2019 Europe trip",
+    size: "20 x 24",
+    notes: `Venice was my favourite part of my Italy trip. I went during a heat wave, and it was the 
+        only place I visited where it wasn't 40 degrees.`,
+  },
+  {
+    path: "/old_paintings/ghibli_column.jpg",
+    title: "Ghibli Courtyard",
+    date: HIGH_SCHOOL,
+    medium: ACRYLIC,
+    referenceSource: "Pinterest",
+    size: "12 x 12",
+    notes: `One of my favourite recreations! I love how the water turned out - it was pretty hard and time 
+    consuming to achieve this effect with acrylics, but I hadn't learned oil at the time.`,
+  },
+  {
+    path: "/old_paintings/ghibli_yard.jpg",
+    title: "Another Ghibli scene",
+    date: HIGH_SCHOOL,
+    medium: ACRYLIC,
+    referenceSource: "Ghibli movie.",
+    size: "12 x 12",
+    notes: `Not a huge fan of this one. I painted it to match the other square Ghibli scene.`,
   },
   {
     path: "/old_paintings/italy.jpg",
