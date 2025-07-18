@@ -57,26 +57,44 @@ export default function NavDrawer({ handleDrawerToggle, pathName, open }: Props)
         <Divider sx={{ borderColor: "grey.400" }} />
         <List>
           {navItems.map((item) => {
-            const selected = pathName === item.path && pathName != "/projects";
+            const selected =
+              pathName === item.path ||
+              (item.path.includes("/projects") && pathName.includes(item.path));
 
-            if (item.subItems) {
+            if (!item.subItems) {
               return (
-                <Box key={item.label}>
+                <ListItem key={item.label} disablePadding>
+                  <ListItemButton component={Link} to={item.path} sx={{ textAlign: "left" }}>
+                    <ListItemText
+                      primary={item.label}
+                      slotProps={{
+                        primary: {
+                          fontWeight: selected ? "bold" : "normal",
+                          sx: {
+                            transition: "all 0.3s ease",
+                          },
+                        },
+                      }}
+                    />
+                  </ListItemButton>
+                </ListItem>
+              );
+            } else {
+              return (
+                <Box>
                   <ListItem
                     disablePadding
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setOpenProjects((prev) => !prev);
+                    }}
                     secondaryAction={
-                      <IconButton
-                        edge="end"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setOpenProjects((prev) => !prev);
-                        }}
-                      >
+                      <IconButton edge="end">
                         {openProjects ? <ExpandLess /> : <ExpandMore />}
                       </IconButton>
                     }
                   >
-                    <ListItemButton component={Link} to={item.path} sx={{ textAlign: "left" }}>
+                    <ListItemButton sx={{ textAlign: "left" }}>
                       <ListItemText
                         primary={item.label}
                         slotProps={{
@@ -122,24 +140,6 @@ export default function NavDrawer({ handleDrawerToggle, pathName, open }: Props)
                 </Box>
               );
             }
-
-            return (
-              <ListItem key={item.label} disablePadding>
-                <ListItemButton component={Link} to={item.path} sx={{ textAlign: "left" }}>
-                  <ListItemText
-                    primary={item.label}
-                    slotProps={{
-                      primary: {
-                        fontWeight: selected ? "bold" : "normal",
-                        sx: {
-                          transition: "all 0.3s ease",
-                        },
-                      },
-                    }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            );
           })}
         </List>
       </Box>
