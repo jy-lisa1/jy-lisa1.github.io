@@ -45,8 +45,8 @@ export default function Home() {
       <Grid size={{ xs: 12, md: 7 }}>
         <Box
           component="img"
-          src="/me/pingu.png"
-          alt="Me"
+          src="https://live.staticflickr.com/65535/54672584695_fbecb0c005_b.jpg"
+          alt="Me in Shanghai"
           sx={{
             width: "100%",
             height: "100%",

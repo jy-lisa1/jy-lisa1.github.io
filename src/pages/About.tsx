@@ -37,8 +37,8 @@ export default function About() {
       <Grid size={{ xs: 12, md: 5 }} sx={{ minHeight: "100%" }} order={{ xs: 2, md: 1 }}>
         <Box
           component="img"
-          src="/me/suzhou.JPG"
-          alt="Me"
+          src="https://live.staticflickr.com/65535/54672256546_6b82669b68_b.jpg"
+          alt="Me in Liu Yuan, a historical garden in Suzhou."
           sx={{
             mt: -1,
             width: "100%",

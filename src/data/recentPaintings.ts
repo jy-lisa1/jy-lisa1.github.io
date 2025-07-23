@@ -2,7 +2,7 @@ import type { GalleryItem } from "./galleryItem";
 
 export const recentPaintings: GalleryItem[] = [
   {
-    path: "/recent_paintings/lighthouse.jpg",
+    path: "https://live.staticflickr.com/65535/54672255806_9266fbbe36_b.jpg",
     title: "Curtis Island Lighthouse",
     date: "May 2025",
     medium: "Oil",
@@ -15,7 +15,7 @@ export const recentPaintings: GalleryItem[] = [
       on the rocks.`,
   },
   {
-    path: "/recent_paintings/cat_by_the_sea.jpg",
+    path: "https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg",
     title: "Kitty by the Sea",
     date: "March 2025",
     medium: "Oil",
@@ -28,7 +28,7 @@ export const recentPaintings: GalleryItem[] = [
       6 hours to complete! Usually a painting of this size takes me at least a whole weekend.`,
   },
   {
-    path: "/recent_paintings/purple_clouds.jpg",
+    path: "https://live.staticflickr.com/65535/54672583940_acf303b33c_b.jpg",
     title: "Clouds!",
     date: "February 2025",
     medium: "Oil",
@@ -42,7 +42,7 @@ export const recentPaintings: GalleryItem[] = [
       trying to get it to behave the way I want it to.`,
   },
   {
-    path: "/recent_paintings/ghibli_sunset.jpg",
+    path: "https://live.staticflickr.com/65535/54672256591_98021f5777_b.jpg",
     title: "Sunset over fields",
     date: "July 2024",
     medium: "Oil",
