@@ -19,15 +19,15 @@ export const ATTRIBUTIONS = [
     url: "https://www.pexels.com/photo/messy-art-materials-on-wooden-table-6184417/",
   },
   {
-    description: "Background - carving tools",
-    creator: "Ковальов Сергій",
-    source: "Vecteezy",
-    url: "https://www.vecteezy.com/photo/7141959-wood-carving-tools",
-  },
-  {
-    description: "Background - yarn",
+    description: "Background - wool",
     creator: "Surene Palvie",
     source: "Pexels",
     url: "https://www.pexels.com/photo/assorted-color-yarns-on-brown-wicker-basket-2070676/",
+  },
+  {
+    description: "Background - magnifying glass",
+    creator: "Sedanur Kunuk",
+    source: "Pexels",
+    url: "https://www.pexels.com/photo/art-supplies-on-cutting-mat-with-magnifying-glass-30548816/",
   },
 ];

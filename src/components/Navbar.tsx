@@ -18,7 +18,7 @@ import { ExpandLess, ExpandMore } from "@mui/icons-material";
 export const projectTypes = [
   { label: "View All", path: "/projects" },
   { label: "Paintings", path: "/projects/paintings" },
-  { label: "Carvings", path: "/projects/carvings" },
+  { label: "Miniatures", path: "/projects/miniatures" },
   { label: "Other", path: "/projects/other" },
 ];
 

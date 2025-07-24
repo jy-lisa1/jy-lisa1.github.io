@@ -6,11 +6,11 @@ import Projects from "./pages/Projects";
 import { Box } from "@mui/material";
 import Footer from "./components/Footer";
 import Paintings from "./pages/Paintings";
-import Carvings from "./pages/Carvings";
 import Other from "./pages/Other";
 import Attributions from "./pages/Attributions";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import Miniatures from "./pages/Miniatures";
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/paintings" element={<Paintings />} />
-            <Route path="/projects/carvings" element={<Carvings />} />
+            <Route path="/projects/miniatures" element={<Miniatures />} />
             <Route path="/projects/other" element={<Other />} />
             <Route path="/attributions" element={<Attributions />} />
             <Route path="/contact" element={<Contact />} />

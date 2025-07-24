@@ -7,19 +7,22 @@ const projectPages: ProjectTypePanelProps[] = [
   {
     title: "Paintings",
     description: "I paint in oil, gouache, and acrylic.",
-    imagePath: "url('/paint.jpg')",
+    imagePath:
+      "url('https://images.pexels.com/photos/6184417/pexels-photo-6184417.jpeg?auto=compress&cs=tinysrgb&w=1200')",
     projectType: "paintings",
   },
   {
-    title: "Carvings",
-    description: "Aka block printing - one of my new discoveries.",
-    imagePath: "url('/carve.jpg')",
-    projectType: "carvings",
+    title: "Miniatures",
+    description: "A test of patience with really cute results.",
+    imagePath:
+      "url('https://images.pexels.com/photos/30548816/pexels-photo-30548816.jpeg?auto=compress&cs=tinysrgb&w=1200')",
+    projectType: "miniatures",
   },
   {
     title: "Other",
     description: "All the other random hobbies I picked up.",
-    imagePath: "url('/wool.jpg')",
+    imagePath:
+      "url('https://images.pexels.com/photos/2070676/pexels-photo-2070676.jpeg?auto=compress&cs=tinysrgb&w=1200')",
     projectType: "other",
   },
 ];
