@@ -45,7 +45,7 @@ export default function ProjectDetails({ item, open, onClose }: Readonly<Props>)
       <DialogContent>
         <Box
           component="img"
-          src={`${item.path}?w=248&fit=crop&auto=format`}
+          src={`${item.paths[0]}?w=248&fit=crop&auto=format`}
           alt={item.title}
           sx={{
             width: "100%",

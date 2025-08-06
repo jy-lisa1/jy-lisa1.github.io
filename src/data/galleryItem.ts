@@ -1,5 +1,5 @@
 export interface GalleryItem {
-  path: string;
+  paths: string[];
   title: string;
   date?: string;
   medium?: string;

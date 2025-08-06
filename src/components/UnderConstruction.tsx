@@ -3,7 +3,9 @@ import { Typography, Box } from "@mui/material";
 export default function UnderConstruction() {
   return (
     <>
-      <Typography variant="h3">Work in progress...</Typography>
+      <Typography variant="h3" pt={2}>
+        Work in progress...
+      </Typography>
       <Box
         component="img"
         src="/under_construction.png"
@@ -17,6 +19,7 @@ export default function UnderConstruction() {
           },
           mx: "auto",
           display: "block",
+          pb: 2,
         }}
       />
     </>

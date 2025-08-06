@@ -9,7 +9,7 @@ const POTTERY = "Pottery";
 
 export const oldPaintings: GalleryItem[] = [
   {
-    path: "https://live.staticflickr.com/65535/54672486408_07c78e7ac4_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672486408_07c78e7ac4_b.jpg"],
     title: "My first oil painting!",
     date: HIGH_SCHOOL,
     medium: OIL,
@@ -20,7 +20,7 @@ export const oldPaintings: GalleryItem[] = [
        when I learned a bunch of useful techniques on TikTok.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672256076_35d0dc25e1_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672256076_35d0dc25e1_b.jpg"],
     title: "A shot at impressionism",
     date: HIGH_SCHOOL,
     medium: OIL,
@@ -30,7 +30,7 @@ export const oldPaintings: GalleryItem[] = [
       I love Monet paintings and I tried to emulate some of his vibes, without a reference photo.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672256566_37cf654d59_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672256566_37cf654d59_b.jpg"],
     title: "Flowers",
     date: HIGH_SCHOOL,
     medium: OIL,
@@ -41,7 +41,7 @@ export const oldPaintings: GalleryItem[] = [
     can't put my finger on it. I definitely like landscapes more :)`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672256616_e13299d55b_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672256616_e13299d55b_b.jpg"],
     title: "Dancing Cranes",
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
@@ -51,7 +51,7 @@ export const oldPaintings: GalleryItem[] = [
     It sat, unfinished and neglected in the basement, for years.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672495624_938308dca6_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672495624_938308dca6_b.jpg"],
     title: "Plants",
     date: HIGH_SCHOOL,
     medium: OIL,
@@ -61,7 +61,7 @@ export const oldPaintings: GalleryItem[] = [
     it myself and it actually didn't take long at all - finished it in just one afternoon.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672584835_358793685e_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672584835_358793685e_b.jpg"],
     title: "Cranes",
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
@@ -70,7 +70,7 @@ export const oldPaintings: GalleryItem[] = [
     notes: `I finished this one in one sitting! It's one of my dad's favourites.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672584890_2a9cb68b44_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672584890_2a9cb68b44_b.jpg"],
     title: "Another sunset",
     date: HIGH_SCHOOL,
     medium: OIL,
@@ -80,7 +80,7 @@ export const oldPaintings: GalleryItem[] = [
     and the light peeking out from behind the cliffs.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672256221_43838744d6_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672256221_43838744d6_b.jpg"],
     title: "Venice",
     date: "July 2024",
     medium: OIL,
@@ -90,7 +90,7 @@ export const oldPaintings: GalleryItem[] = [
         only place I visited where it wasn't 40 degrees.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672495894_0ce3e7446f_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672495894_0ce3e7446f_b.jpg"],
     title: "Ghibli Courtyard",
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
@@ -100,7 +100,7 @@ export const oldPaintings: GalleryItem[] = [
     consuming to achieve this effect with acrylics, but I hadn't learned oil at the time.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672486423_4a5c56e71e_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672486423_4a5c56e71e_b.jpg"],
     title: "Another Ghibli scene",
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
@@ -109,7 +109,7 @@ export const oldPaintings: GalleryItem[] = [
     notes: `Not a huge fan of this one. I painted it to match the other square Ghibli scene.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672584605_8fd4952fa6_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672584605_8fd4952fa6_b.jpg"],
     title: "Italy",
     date: MIDDLE_SCHOOL,
     medium: OIL,
@@ -120,7 +120,7 @@ export const oldPaintings: GalleryItem[] = [
     to crack already :(`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54671422147_e9d6c25fba_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54671422147_e9d6c25fba_b.jpg"],
     title: "Ghibli - scene from Porco Rosso",
     date: MIDDLE_SCHOOL,
     medium: ACRYLIC,
@@ -131,7 +131,7 @@ export const oldPaintings: GalleryItem[] = [
   },
 
   {
-    path: "https://live.staticflickr.com/65535/54672584470_0b76b18b39_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672584470_0b76b18b39_b.jpg"],
     title: "Sheep by the sea",
     date: HIGH_SCHOOL,
     medium: GOUACHE,
@@ -140,7 +140,7 @@ export const oldPaintings: GalleryItem[] = [
     notes: `A small painting that kept me company in my tiny Montreal apartment.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54672255941_afea4b2ff9_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54672255941_afea4b2ff9_b.jpg"],
     title: "A fall scene",
     date: MIDDLE_SCHOOL,
     medium: ACRYLIC,
@@ -150,7 +150,7 @@ export const oldPaintings: GalleryItem[] = [
     and loved how it turned out. It was a lot of fun dabbing my brush onto the canvas to make the leaves.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54671421842_f70b83b8ed_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54671421842_f70b83b8ed_b.jpg"],
     title: "Another sheep",
     date: HIGH_SCHOOL,
     medium: GOUACHE,
@@ -159,7 +159,7 @@ export const oldPaintings: GalleryItem[] = [
     notes: `I like painting sheep because my name in Chinese (Yang) is a homonym for sheep/goats.`,
   },
   {
-    path: "https://live.staticflickr.com/65535/54671421767_6270e7480b_b.jpg",
+    paths: ["https://live.staticflickr.com/65535/54671421767_6270e7480b_b.jpg"],
     title: "Sheep plate",
     date: HIGH_SCHOOL,
     medium: POTTERY,

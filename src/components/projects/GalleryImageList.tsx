@@ -19,7 +19,7 @@ export default function GalleryImageList({ cols, items, handleImageClick }: Read
         <ImageListItem key={item.title}>
           <Box
             component="img"
-            src={`${item.path}?w=248&fit=crop&auto=format`}
+            src={`${item.paths[0]}?w=248&fit=crop&auto=format`}
             alt={item.title}
             loading="lazy"
             onClick={() => handleImageClick(item)}
