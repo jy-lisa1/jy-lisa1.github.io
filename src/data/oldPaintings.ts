@@ -14,7 +14,7 @@ export const oldPaintings: GalleryItem[] = [
     date: HIGH_SCHOOL,
     medium: OIL,
     referenceSource: "Followed a tutorial from an old art book.",
-    size: "14 x 18",
+    size: "11 x 14",
     notes: `My first time trying oil painting! It's really different from acrylic and it was hard
        to get used to, since the paint doesn't dry instantly. I didn't fully get used to it until 2025, 
        when I learned a bunch of useful techniques on TikTok.`,
@@ -46,8 +46,8 @@ export const oldPaintings: GalleryItem[] = [
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
     referenceSource: "Google Images. It was another popular reference photo that disappeared.",
-    size: "20 x 24",
-    notes: `I lvoed the reference photo, but I really procrastinated finishing this one. 
+    size: "18 x 24",
+    notes: `I loved the reference photo, but I really procrastinated finishing this one. 
     It sat, unfinished and neglected in the basement, for years.`,
   },
   {
@@ -56,7 +56,7 @@ export const oldPaintings: GalleryItem[] = [
     date: HIGH_SCHOOL,
     medium: OIL,
     referenceSource: "Some home decor I saw",
-    size: "20 x 24",
+    size: "18 x 24",
     notes: `I saw this as a print at a home decor store, but it was morbidly overpriced. Decided to make 
     it myself and it actually didn't take long at all - finished it in just one afternoon.`,
   },
@@ -66,7 +66,7 @@ export const oldPaintings: GalleryItem[] = [
     date: HIGH_SCHOOL,
     medium: ACRYLIC,
     referenceSource: "Google Images - I can't find the original photo anymore.",
-    size: "14 x 18",
+    size: "11 x 14",
     notes: `I finished this one in one sitting! It's one of my dad's favourites.`,
   },
   {
@@ -85,7 +85,7 @@ export const oldPaintings: GalleryItem[] = [
     date: "July 2024",
     medium: OIL,
     referenceSource: "My camera album after my 2019 Europe trip",
-    size: "20 x 24",
+    size: "18 x 24",
     notes: `Venice was my favourite part of my Italy trip. I went during a heat wave, and it was the 
         only place I visited where it wasn't 40 degrees.`,
   },
@@ -114,7 +114,7 @@ export const oldPaintings: GalleryItem[] = [
     date: MIDDLE_SCHOOL,
     medium: OIL,
     referenceSource: "A book about Italy",
-    size: "20 x 24",
+    size: "18 x 24",
     notes: `Not much to say about this one - saw a photo I liked in a book about Italy and decided to 
     paint it. I never varnished it because I didn't know I was supposed to, and unfortunately it's starting 
     to crack already :(`,

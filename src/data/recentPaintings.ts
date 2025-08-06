@@ -28,6 +28,16 @@ export const recentPaintings: GalleryItem[] = [
       6 hours to complete! Usually a painting of this size takes me at least a whole weekend.`,
   },
   {
+    path: "https://live.staticflickr.com/65535/54704398818_315df083c9_b.jpg",
+    title: "Beach sunset",
+    date: "July 2025",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/300967187623114253/",
+    size: "14 x 18",
+    notes: `A quick painting, on the smaller side, that I made while recovering from my wisdom teeth surgery.`,
+  },
+  {
     path: "https://live.staticflickr.com/65535/54672583940_acf303b33c_b.jpg",
     title: "Clouds!",
     date: "February 2025",
