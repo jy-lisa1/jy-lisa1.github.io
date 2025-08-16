@@ -44,7 +44,15 @@ export default function ProjectTypePanel(props: ProjectTypePanelProps) {
           textAlign: "center",
         }}
       >
-        <Box alignItems={"flex-start"} pt="120px">
+        <Box
+          alignItems={"flex-start"}
+          sx={{
+            pt: "120px",
+            "@media (max-width: 380px)": {
+              pt: "80px",
+            },
+          }}
+        >
           <Typography variant="h2" textTransform={"uppercase"}>
             {props.title}
           </Typography>

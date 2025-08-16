@@ -15,6 +15,20 @@ export const recentPaintings: GalleryItem[] = [
       on the rocks.`,
   },
   {
+    paths: ["https://live.staticflickr.com/65535/54725582095_faf1622522_b.jpg"],
+    title: "Portrait of a Fawn",
+    date: "August 2025",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://i.pinimg.com/1200x/d7/51/ef/d751ef7dc1cb389de8767b2faa547966.jpg",
+    size: "11 x 14",
+    notes: `Wanted to try something different since I've been exclusively painting water and landscapes lately. 
+      Deer have always been one of my favourite animals, they're so pretty! I used a large flat brush to create 
+      a blurred out background, and smaller flat brushes for the fur. I like the way the painting turned out, 
+      but it gave me HORRENDOUS back & neck pain for days because I painted it while awkwardly 
+      kneeling, hunched over on the floor. One day I will have a more comfortable setup!`,
+  },
+  {
     paths: ["https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg"],
     title: "Kitty by the Sea",
     date: "March 2025",
@@ -27,6 +41,7 @@ export const recentPaintings: GalleryItem[] = [
       after a lot of trial and error, I think it worked out pretty well in the end. This one only took 
       6 hours to complete! Usually a painting of this size takes me at least a whole weekend.`,
   },
+
   {
     paths: ["https://live.staticflickr.com/65535/54704398818_315df083c9_b.jpg"],
     title: "Beach sunset",

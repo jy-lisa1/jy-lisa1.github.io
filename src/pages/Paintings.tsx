@@ -38,8 +38,7 @@ export default function Paintings() {
     <Container sx={{ py: 4 }}>
       <Typography variant="h2">Recent Paintings</Typography>
       <Typography variant="h5">
-        These are my most recent paintings, done in the past year. Click on each one for more
-        details!
+        These are my most recent paintings. Click on each one for more details!
       </Typography>
       <GalleryImageList
         cols={cols}
