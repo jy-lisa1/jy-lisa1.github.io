@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import type { GalleryItem } from "../../data/galleryItem";
 import CloseIcon from "@mui/icons-material/Close";
+import { Carousel } from "react-responsive-carousel";
 
 type Props = {
   item: GalleryItem;
@@ -43,17 +44,29 @@ export default function ProjectDetails({ item, onClose }: Readonly<Props>) {
         </IconButton>
       </DialogTitle>
       <DialogContent>
-        <Box
-          component="img"
-          src={`${item.paths[0]}?w=248&fit=crop&auto=format`}
-          alt={item.title}
-          sx={{
-            width: "100%",
-            maxHeight: "80vh",
-            objectFit: "contain",
-            borderRadius: 1,
-          }}
-        />
+        {item.paths.length === 1 ? (
+          <Box
+            component="img"
+            src={`${item.paths[0]}?w=248&fit=crop&auto=format`}
+            alt={item.title}
+            sx={{
+              width: "100%",
+              maxHeight: "80vh",
+              objectFit: "contain",
+              borderRadius: 1,
+            }}
+          />
+        ) : (
+          <Box>
+            <Carousel useKeyboardArrows showThumbs={false} showStatus={false}>
+              {item.paths.map((path, index) => (
+                <div key={index}>
+                  <img src={path} alt={`project_photo_${index}`} />
+                </div>
+              ))}
+            </Carousel>
+          </Box>
+        )}
         {item.date && (
           <Typography sx={{ pt: 2 }}>
             <b>Date:</b> {item.date}
