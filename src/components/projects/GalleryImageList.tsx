@@ -5,6 +5,8 @@ type Props = {
   cols: number;
   items: GalleryItem[];
   handleImageClick: (item: GalleryItem) => void;
+  title?: string;
+  description?: string;
 };
 
 export default function GalleryImageList({ cols, items, handleImageClick }: Readonly<Props>) {

@@ -1,10 +1,11 @@
-import { Container, Divider, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Container, Divider, Typography } from "@mui/material";
 import { recentPaintings } from "../data/recentPaintings";
 import { oldPaintings } from "../data/oldPaintings";
 import type { GalleryItem } from "../data/galleryItem";
 import { useState } from "react";
 import ProjectDetails from "../components/projects/ProjectDetails";
 import GalleryImageList from "../components/projects/GalleryImageList";
+import { useColumns } from "../utils/utils";
 
 function getEveryNth(list: GalleryItem[], n: number, m: number) {
   return list.filter((_, index) => (index - m) % n === 0 && index >= m);
@@ -19,18 +20,13 @@ function reorderPaintings(cols: number, paintings: GalleryItem[]) {
 }
 
 export default function Paintings() {
-  const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-  const cols = isXs ? 1 : 2;
-
-  const [dialogOpen, setDialogOpen] = useState(false);
+  const cols = useColumns();
   const [selectedItem, setSelectedItem] = useState<GalleryItem | undefined>(undefined);
 
-  const recentPaintingsOrdered = reorderPaintings(cols, recentPaintings);
-  const oldPaintingsOrdered = reorderPaintings(cols + 1, oldPaintings);
+  const recentPaintingsOrdered = reorderPaintings(cols - 1, recentPaintings);
+  const oldPaintingsOrdered = reorderPaintings(cols, oldPaintings);
 
   function handleImageClick(item: GalleryItem) {
-    setDialogOpen(true);
     setSelectedItem(item);
   }
 
@@ -41,7 +37,7 @@ export default function Paintings() {
         These are my most recent paintings. Click on each one for more details!
       </Typography>
       <GalleryImageList
-        cols={cols}
+        cols={cols - 1}
         items={recentPaintingsOrdered}
         handleImageClick={handleImageClick}
       />
@@ -54,7 +50,7 @@ export default function Paintings() {
         Dates are missing from most of these because I don't really remember.
       </Typography>
       <GalleryImageList
-        cols={cols + 1}
+        cols={cols}
         items={oldPaintingsOrdered}
         handleImageClick={handleImageClick}
       />
@@ -62,9 +58,7 @@ export default function Paintings() {
       {selectedItem && (
         <ProjectDetails
           item={selectedItem}
-          open={dialogOpen}
           onClose={() => {
-            setDialogOpen(false);
             setSelectedItem(undefined);
           }}
         />

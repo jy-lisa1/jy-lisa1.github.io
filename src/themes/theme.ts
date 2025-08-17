@@ -5,7 +5,11 @@ import "@fontsource-variable/josefin-sans/index.css";
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
 let theme = createTheme({
-  palette: { primary: { main: "#F0EEEA" }, background: { default: "#F8F7F5", paper: "#F8F7F5" } },
+  palette: {
+    primary: { main: "#F0EEEA" },
+    secondary: { main: "#F59816" },
+    background: { default: "#F8F7F5", paper: "#F8F7F5" },
+  },
   typography: {
     h1: {
       fontWeight: 500,
