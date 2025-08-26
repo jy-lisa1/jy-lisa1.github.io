@@ -2,17 +2,17 @@ import type { GalleryItem } from "./galleryItem";
 
 export const recentPaintings: GalleryItem[] = [
   {
-    paths: ["https://live.staticflickr.com/65535/54672255806_9266fbbe36_b.jpg"],
-    title: "Curtis Island Lighthouse",
-    date: "May 2025",
+    paths: ["https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg"],
+    title: "Kitty by the Sea",
+    date: "March 2025",
     medium: "Oil",
-    referenceSource: "US Lighthouses",
-    referenceLink: "https://www.us-lighthouses.com/curtis-island-lighthouse",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/11540542793846762/",
     size: "16 x 20",
-    notes: `Reminds me of a lighthouse I saw around Vancouver Island, where I took a really similar 
-      picture when I was on a BC Ferry. I bought a set of mop brushes for this piece so I can blend the sky better, 
-      and I love how smooth it looks in comparison to my previous paintings. I also used the pallet knife trick 
-      on the rocks.`,
+    notes: `Had a lot of fun with this one! I really wanted to try out a trick I saw on TikTok, where they used
+      a pallet knife to create the texture on the rocks. I was panicking at first because it wasn't working, but
+      after a lot of trial and error, I think it worked out pretty well in the end. This one only took 
+      6 hours to complete! Usually a painting of this size takes me at least a whole weekend.`,
   },
   {
     paths: ["https://live.staticflickr.com/65535/54725582095_faf1622522_b.jpg"],
@@ -29,17 +29,17 @@ export const recentPaintings: GalleryItem[] = [
       kneeling, hunched over on the floor. One day I will have a more comfortable setup!`,
   },
   {
-    paths: ["https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg"],
-    title: "Kitty by the Sea",
-    date: "March 2025",
+    paths: ["https://live.staticflickr.com/65535/54672255806_9266fbbe36_b.jpg"],
+    title: "Curtis Island Lighthouse",
+    date: "May 2025",
     medium: "Oil",
-    referenceSource: "Pinterest",
-    referenceLink: "https://ca.pinterest.com/pin/11540542793846762/",
+    referenceSource: "US Lighthouses",
+    referenceLink: "https://www.us-lighthouses.com/curtis-island-lighthouse",
     size: "16 x 20",
-    notes: `Had a lot of fun with this one! I really wanted to try out a trick I saw on TikTok, where they used
-      a pallet knife to create the texture on the rocks. I was panicking at first because it wasn't working, but
-      after a lot of trial and error, I think it worked out pretty well in the end. This one only took 
-      6 hours to complete! Usually a painting of this size takes me at least a whole weekend.`,
+    notes: `Reminds me of a lighthouse I saw around Vancouver Island, where I took a really similar 
+      picture when I was on a BC Ferry. I bought a set of mop brushes for this piece so I can blend the sky better, 
+      and I love how smooth it looks in comparison to my previous paintings. I also used the pallet knife trick 
+      on the rocks.`,
   },
 
   {
