@@ -8,6 +8,8 @@ import { useColumns } from "../utils/utils";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import theme from "../themes/theme";
 import { feltworks } from "../data/feltworks";
+import { markerDrawings } from "../data/markerDrawings";
+import { fakeCakes } from "../data/fakeCakes";
 
 export default function Other() {
   const buttonColor = theme.palette.secondary.main;
@@ -23,8 +25,18 @@ export default function Other() {
         Other Creations
       </Typography>
 
+      <Typography variant="h3">Alcohol Marker Drawings</Typography>
+      <Divider sx={{ borderWidth: "1px", my: 1 }} />
+      <Typography>
+        Alcohol markers are a very recent find of mine, but I don't use them much since they're
+        super expensive and I always feel like they're gonna run out in like two seconds. I haven't
+        really gotten the hang of them yet, but I love how vibrant the colours are and how smoothly
+        they glide onto the paper.
+      </Typography>
+      <GalleryImageList cols={cols} items={markerDrawings} handleImageClick={handleImageClick} />
+
       <Stack direction="row" spacing={2} alignItems="center">
-        <Typography variant="h3">Woodblock Carving & Printing</Typography>
+        <Typography variant="h3">Woodblock Printing</Typography>
         <Button
           endIcon={<HandymanIcon />}
           variant="outlined"
@@ -43,14 +55,6 @@ export default function Other() {
         I love how it still lives on today as a beloved art form.
       </Typography>
       <GalleryImageList cols={cols} items={carvings} handleImageClick={handleImageClick} />
-      {selectedItem && (
-        <ProjectDetails
-          item={selectedItem}
-          onClose={() => {
-            setSelectedItem(undefined);
-          }}
-        />
-      )}
 
       <Stack direction="row" spacing={2} alignItems="center">
         <Typography variant="h3">Felting</Typography>
@@ -63,6 +67,17 @@ export default function Other() {
         ornaments! It does give me hella hand cramps though.
       </Typography>
       <GalleryImageList cols={cols} items={feltworks} handleImageClick={handleImageClick} />
+
+      <Typography variant="h3">Fake Cakes</Typography>
+      <Divider sx={{ borderWidth: "1px", my: 1 }} />
+      <Typography>
+        I saw someone making these on TikTok and I had to try it out! The "icing" is just
+        lightweight spackling from Home Depot, mixed with acrylic paint for the colour. You can use
+        anything as the base of the cake - I use boxes and jewellery boxes. Then, you just ice the
+        cake as you would a real one, with piping bags and tips. It dries completely overnight!
+      </Typography>
+      <GalleryImageList cols={cols} items={fakeCakes} handleImageClick={handleImageClick} />
+
       {selectedItem && (
         <ProjectDetails
           item={selectedItem}

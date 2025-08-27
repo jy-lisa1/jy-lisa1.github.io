@@ -99,6 +99,26 @@ export const oldPaintings: GalleryItem[] = [
     notes: `One of my favourite recreations! I love how the water turned out - it was pretty hard and time 
     consuming to achieve this effect with acrylics, but I hadn't learned oil at the time.`,
   },
+
+  {
+    paths: ["https://live.staticflickr.com/65535/54747468314_25b95a7d1f_c.jpg"],
+    title: "Mini gouache paintings",
+    date: HIGH_SCHOOL,
+    medium: GOUACHE,
+    referenceSource: "Pinterest",
+    size: "4 x 5",
+    notes: `I bought an adorable HIMI jelly gouache set during high school, and used it to make these 
+    mini paintings on watercolour paper. I'd usually make 4 at a time like this.`,
+  },
+  {
+    paths: ["https://live.staticflickr.com/65535/54746401452_82ebc17e57_c.jpg"],
+    title: "More gouache landscapes",
+    date: HIGH_SCHOOL,
+    medium: GOUACHE,
+    referenceSource: "Pinterest",
+    size: "4 x 5",
+    notes: `Landscapes are my favourite thing to paint, so of course I made a lot of gouache landscapes too.`,
+  },
   {
     paths: ["https://live.staticflickr.com/65535/54672486423_4a5c56e71e_b.jpg"],
     title: "Another Ghibli scene",
