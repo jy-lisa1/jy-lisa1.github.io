@@ -25,6 +25,18 @@ export default function Other() {
         Other Creations
       </Typography>
 
+      <Stack direction="row" spacing={2} alignItems="center">
+        <Typography variant="h3">Felting</Typography>
+      </Stack>
+      <Divider sx={{ borderWidth: "1px", my: 1 }} />
+      <Typography>
+        This was a covid hobby that I come back to every now and then. I love how simple it is - all
+        you really need is a felting needle and some wool, and then you just stab the wool until it
+        forms into the shape that you want. It's cheap, convenient, and makes really cute Christmas
+        ornaments! It does give me hella hand cramps though.
+      </Typography>
+      <GalleryImageList cols={cols} items={feltworks} handleImageClick={handleImageClick} />
+
       <Typography variant="h3">Alcohol Marker Drawings</Typography>
       <Divider sx={{ borderWidth: "1px", my: 1 }} />
       <Typography>
@@ -55,18 +67,6 @@ export default function Other() {
         I love how it still lives on today as a beloved art form.
       </Typography>
       <GalleryImageList cols={cols} items={carvings} handleImageClick={handleImageClick} />
-
-      <Stack direction="row" spacing={2} alignItems="center">
-        <Typography variant="h3">Felting</Typography>
-      </Stack>
-      <Divider sx={{ borderWidth: "1px", my: 1 }} />
-      <Typography>
-        This was a covid hobby that I come back to every now and then. I love how simple it is - all
-        you really need is a felting needle and some wool, and then you just stab the wool until it
-        forms into the shape that you want. It's cheap, convenient, and makes really cute Christmas
-        ornaments! It does give me hella hand cramps though.
-      </Typography>
-      <GalleryImageList cols={cols} items={feltworks} handleImageClick={handleImageClick} />
 
       <Typography variant="h3">Fake Cakes</Typography>
       <Divider sx={{ borderWidth: "1px", my: 1 }} />
