@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prettier:format": "prettier --write src",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
