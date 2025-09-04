@@ -60,8 +60,24 @@ export default function ProjectDetails({ item, onClose }: Readonly<Props>) {
           <Box>
             <Carousel useKeyboardArrows showThumbs={false} showStatus={false}>
               {item.paths.map((path, index) => (
-                <div key={index}>
-                  <img src={path} alt={`project_photo_${index}`} />
+                <div
+                  key={index}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "450px",
+                  }}
+                >
+                  <img
+                    src={path}
+                    alt={`project_photo_${index}`}
+                    style={{
+                      maxHeight: "100%",
+                      maxWidth: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
                 </div>
               ))}
             </Carousel>
