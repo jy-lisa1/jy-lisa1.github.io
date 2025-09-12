@@ -43,6 +43,8 @@ export default function About() {
             mt: -1,
             width: "100%",
             height: "100%",
+            objectFit: "cover",
+            objectPosition: "right bottom",
           }}
         />
       </Grid>

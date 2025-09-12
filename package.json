@@ -6,7 +6,7 @@
   "homepage": "https://jy-lisa1.github.io",
   "scripts": {
     "start": "npm run start:fix && vite",
-    "start:fix": "rmdir /s /q node_modules\\.vite",
+    "start:fix": "if exist node_modules\\.vite rmdir /s /q node_modules\\.vite",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
