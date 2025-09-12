@@ -38,16 +38,6 @@ export const miniatureDollhouses: GalleryItem[] = [
   },
   {
     paths: [
-      "https://live.staticflickr.com/65535/54764299363_f5d86daf2f_c.jpg",
-      "https://live.staticflickr.com/65535/54764298888_cc76f0a625_c.jpg",
-      "https://live.staticflickr.com/65535/54764403140_98319542d0_c.jpg",
-    ],
-    title: "Pink house",
-    notes: `Another friend got this for me for my birthday as well. What a coincidence! They 
-      don't even know each other, but still got me almost the same thing.`,
-  },
-  {
-    paths: [
       "https://live.staticflickr.com/65535/54764527535_e7e11271f3_c.jpg",
       "https://live.staticflickr.com/65535/54763335782_b6e608aa12_c.jpg",
     ],
@@ -55,5 +45,15 @@ export const miniatureDollhouses: GalleryItem[] = [
     notes: `Made this one over winter break during high school. Unfortunately I don't have any 
     more pictures of it lit up, since the battery decided to explode and permanently damage 
     the entire electrical system.`,
+  },
+  {
+    paths: [
+      "https://live.staticflickr.com/65535/54764299363_f5d86daf2f_c.jpg",
+      "https://live.staticflickr.com/65535/54764298888_cc76f0a625_c.jpg",
+      "https://live.staticflickr.com/65535/54764403140_98319542d0_c.jpg",
+    ],
+    title: "Pink house",
+    notes: `Another friend got this for me for my birthday as well. What a coincidence! They 
+      don't even know each other, but still got me almost the same thing.`,
   },
 ];
