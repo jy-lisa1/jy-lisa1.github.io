@@ -28,16 +28,6 @@ export const miniatureDollhouses: GalleryItem[] = [
   },
   {
     paths: [
-      "https://live.staticflickr.com/65535/54764060211_fb46b67432_c.jpg",
-      "https://live.staticflickr.com/65535/54764298963_5c206369aa_c.jpg",
-      "https://live.staticflickr.com/65535/54764405260_42be8b0129_c.jpg",
-      "https://live.staticflickr.com/65535/54764059886_5a31519040_c.jpg",
-    ],
-    title: "Garden shed",
-    notes: `My friend got me this for my birthday. Such a cute build, I love it!`,
-  },
-  {
-    paths: [
       "https://live.staticflickr.com/65535/54764527535_e7e11271f3_c.jpg",
       "https://live.staticflickr.com/65535/54763335782_b6e608aa12_c.jpg",
     ],
@@ -45,6 +35,16 @@ export const miniatureDollhouses: GalleryItem[] = [
     notes: `Made this one over winter break during high school. Unfortunately I don't have any 
     more pictures of it lit up, since the battery decided to explode and permanently damage 
     the entire electrical system.`,
+  },
+  {
+    paths: [
+      "https://live.staticflickr.com/65535/54764060211_fb46b67432_c.jpg",
+      "https://live.staticflickr.com/65535/54764298963_5c206369aa_c.jpg",
+      "https://live.staticflickr.com/65535/54764405260_42be8b0129_c.jpg",
+      "https://live.staticflickr.com/65535/54764059886_5a31519040_c.jpg",
+    ],
+    title: "Garden shed",
+    notes: `My friend got me this for my birthday. Such a cute build, I love it!`,
   },
   {
     paths: [
