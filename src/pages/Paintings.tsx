@@ -46,7 +46,7 @@ export default function Paintings() {
 
       <Typography variant="h2">Older Paintings</Typography>
       <Typography variant="h5">
-        These are some paintings, in no particular order, from my teenage years. What a throwback!
+        Most of these paintings are from my teenage years, in no particular order. What a throwback!
         Dates are missing from most of these because I don't really remember.
       </Typography>
       <GalleryImageList

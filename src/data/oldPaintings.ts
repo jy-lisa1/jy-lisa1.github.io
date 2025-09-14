@@ -17,7 +17,23 @@ export const oldPaintings: GalleryItem[] = [
     size: "11 x 14",
     notes: `My first time trying oil painting! It's really different from acrylic and it was hard
        to get used to, since the paint doesn't dry instantly. I didn't fully get used to it until 2025, 
-       when I learned a bunch of useful techniques on TikTok.`,
+       when I learned a bunch of useful techniques on TikTok. Despite this being my first oil painting, 
+       it's still one of my favourites! It's hung up in my room and has been keeping me company for the 
+       past 8 years.`,
+  },
+  {
+    paths: ["https://live.staticflickr.com/65535/54672256591_98021f5777_b.jpg"],
+    title: "Sunset over fields",
+    date: "July 2024",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/300967187622135515/",
+    size: "16 x 20",
+    notes: `My first painting in almost 4 years! I was too lazy and unmotivated to make anything 
+        during uni. I decided to recreate this painting instead of making something original to ease my 
+        transition into doing art again after my 4 year gap. Replicating paintings also helps me learn new 
+        techniques and styles, which is primarily how I learned to paint when I was a kid. This scene is 
+        apparently from Nausicaa Valley of the Wind - I loved the movie, but I don't remember this specific shot.`,
   },
   {
     paths: ["https://live.staticflickr.com/65535/54672256076_35d0dc25e1_b.jpg"],

@@ -2,6 +2,19 @@ import type { GalleryItem } from "./galleryItem";
 
 export const recentPaintings: GalleryItem[] = [
   {
+    paths: ["https://live.staticflickr.com/65535/54787007031_1a5c0e4fa0_c.jpg"],
+    title: "Pretty cat",
+    date: "September 2025",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/11540542793846762/",
+    size: "16 x 20",
+    notes: `This one only took a few hours to complete, but I like it a lot! My mom really likes 
+      it too. Most of the time was spent on the background, which took longer than expected, but the 
+      cat itself was pretty quick. My favourite parts are the ears (they look like strawberries) 
+      and the whiskers! =^-w-^=`,
+  },
+  {
     paths: ["https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg"],
     title: "Kitty by the Sea",
     date: "March 2025",
@@ -65,19 +78,5 @@ export const recentPaintings: GalleryItem[] = [
       This was also my first time using linseed oil to dilute the paints, and it made my life SO MUCH EASIER. The
       paint glides smoothly over the canvas like soft butter on toast, and I no longer need to fight for my life 
       trying to get it to behave the way I want it to.`,
-  },
-  {
-    paths: ["https://live.staticflickr.com/65535/54672256591_98021f5777_b.jpg"],
-    title: "Sunset over fields",
-    date: "July 2024",
-    medium: "Oil",
-    referenceSource: "Pinterest",
-    referenceLink: "https://ca.pinterest.com/pin/300967187622135515/",
-    size: "16 x 20",
-    notes: `My first painting in almost 4 years! I was too lazy and unmotivated to make anything 
-        during uni. I decided to recreate this painting instead of making something original to ease my 
-        transition into doing art again after my 4 year gap. Replicating paintings also helps me learn new 
-        techniques and styles, which is primarily how I learned to paint when I was a kid. This scene is 
-        apparently from Nausicaa Valley of the Wind - I loved the movie, but I don't remember this specific shot.`,
   },
 ];
