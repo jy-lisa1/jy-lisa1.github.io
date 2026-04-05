@@ -10,7 +10,7 @@ import Other from "./pages/Other";
 import Attributions from "./pages/Attributions";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import Miniatures from "./pages/Miniatures";
+import Carvings from "./pages/Prints";
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/paintings" element={<Paintings />} />
-            <Route path="/projects/miniatures" element={<Miniatures />} />
+            <Route path="/projects/prints" element={<Carvings />} />
             <Route path="/projects/other" element={<Other />} />
             <Route path="/attributions" element={<Attributions />} />
             <Route path="/contact" element={<Contact />} />

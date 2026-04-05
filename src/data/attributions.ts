@@ -19,10 +19,10 @@ export const ATTRIBUTIONS = [
     url: "https://www.pexels.com/photo/messy-art-materials-on-wooden-table-6184417/",
   },
   {
-    description: "Background - wool",
-    creator: "Surene Palvie",
+    description: "Background - print",
+    creator: "Anna Shvets",
     source: "Pexels",
-    url: "https://www.pexels.com/photo/assorted-color-yarns-on-brown-wicker-basket-2070676/",
+    url: "https://www.pexels.com/photo/paint-roller-and-picture-on-table-in-craft-shop-5641905/",
   },
   {
     description: "Background - magnifying glass",

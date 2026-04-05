@@ -1,6 +1,6 @@
 import type { GalleryItem } from "./galleryItem";
 
-export const carvings: GalleryItem[] = [
+export const suzhouMuseumPrints: GalleryItem[] = [
   {
     paths: ["https://live.staticflickr.com/65535/54725534849_cd5337bf8a_b.jpg"],
     title: "Cat on a sword",
@@ -46,5 +46,5 @@ export const carvingTools: GalleryItem = {
    It came with two carving knives (a round one for hollowing out bigger areas and a sharp one for details), 
    a roller to evenly distribute paint onto the blocks, and a wooden mushroom to transfer the paint from 
    the blocks to the paper. The paint they gave me was oil-based, but I did NOT enjoy cleaning up 
-   the mess so I bought some water-based paint instead.`,
+   the mess so I bought some water-based Speedball paint instead.`,
 };

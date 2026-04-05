@@ -12,17 +12,17 @@ const projectPages: ProjectTypePanelProps[] = [
     projectType: "paintings",
   },
   {
-    title: "Miniatures",
-    description: "A test of patience with really cute results.",
+    title: "Block Prints",
+    description: "An art I fell in love with recently.",
     imagePath:
-      "url('https://images.pexels.com/photos/30548816/pexels-photo-30548816.jpeg?auto=compress&cs=tinysrgb&w=1200')",
-    projectType: "miniatures",
+      "url('https://images.pexels.com/photos/5641905/pexels-photo-5641905.jpeg?auto=compress&cs=tinysrgb&w=1200')",
+    projectType: "prints",
   },
   {
     title: "Other",
     description: "All the other random hobbies I picked up.",
     imagePath:
-      "url('https://images.pexels.com/photos/2070676/pexels-photo-2070676.jpeg?auto=compress&cs=tinysrgb&w=1200')",
+      "url('https://images.pexels.com/photos/30548816/pexels-photo-30548816.jpeg?auto=compress&cs=tinysrgb&w=1200')",
     projectType: "other",
   },
 ];
