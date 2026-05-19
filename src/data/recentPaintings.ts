@@ -3,16 +3,29 @@ import type { GalleryItem } from "./galleryItem";
 export const recentPaintings: GalleryItem[] = [
   {
     paths: ["https://live.staticflickr.com/65535/54787007031_1a5c0e4fa0_c.jpg"],
-    title: "Pretty cat",
+    title: "Xiao Bai",
     date: "September 2025",
     medium: "Oil",
     referenceSource: "Pinterest",
     referenceLink: "https://ca.pinterest.com/pin/11540542793846762/",
     size: "16 x 20",
-    notes: `This one only took a few hours to complete, but I like it a lot! My mom really likes 
-      it too. Most of the time was spent on the background, which took longer than expected, but the 
+    notes: `This one only took a few hours to complete, but it's one of my faourites because I actually 
+      met this cat in Suzhou's Yi Yuan! He's pretty famous on XHS, and I actually didn't realize it was the same 
+      cat until after I finished the painting. I reverse searched the reference pic and the garden background 
+      looked suspiciously familiar, and I connected he dots after looking through the pics I took myself. 
+      Most of the time I spent on this painting was on the background, which took longer than expected, but the 
       cat itself was pretty quick. My favourite parts are the ears (they look like strawberries) 
       and the whiskers! =^-w-^=`,
+  },
+  {
+    paths: ["https://live.staticflickr.com/65535/55280548496_722de30065_c.jpg"],
+    title: "Xiao Bai pt 2",
+    date: "May 2026",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    referenceLink: "https://ca.pinterest.com/pin/11540542793846762/",
+    size: "16 x 20",
+    notes: `Another one of Xiao Bai! I think the reference pic was from the same photographer as the last one.`,
   },
   {
     paths: ["https://live.staticflickr.com/65535/54672583995_e8c8aa4d4f_b.jpg"],
