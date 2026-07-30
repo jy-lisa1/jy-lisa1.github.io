@@ -2,6 +2,14 @@ import type { GalleryItem } from "./galleryItem";
 
 export const markerDrawings: GalleryItem[] = [
   {
+    paths: ["https://live.staticflickr.com/65535/55431794625_c8f10c79e8_c.jpg"],
+    title: "3 Great Mages",
+    date: "June 2026",
+    size: "4 x 6",
+    notes: `Freiren looks kinda rough here but I got the hang out it when I was making Serie. I think 
+      the trick was to use a thinner liner and avoid overlapping colours too much.`,
+  },
+  {
     paths: ["https://live.staticflickr.com/65535/54747431129_2e6644da79_c.jpg"],
     title: "Table Cat",
     date: "Spring 2025",

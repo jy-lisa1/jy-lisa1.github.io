@@ -3,6 +3,16 @@ import type { GalleryItem } from "./galleryItem";
 export const miniatureDollhouses: GalleryItem[] = [
   {
     paths: [
+      "https://live.staticflickr.com/65535/55431569564_7e7e2417f7_c.jpg",
+      "https://live.staticflickr.com/65535/55430426262_b3164a4991_c.jpg",
+      "https://live.staticflickr.com/65535/55431792435_bc13b9b38e_c.jpg",
+      "https://live.staticflickr.com/65535/55431569819_16199697a5_c.jpg",
+    ],
+    title: "Cafe",
+    notes: `My friend got me this one for my birthday!`,
+  },
+  {
+    paths: [
       "https://live.staticflickr.com/65535/54763214142_b4ab2a5efa_c.jpg",
       "https://live.staticflickr.com/65535/54764405765_155dec784b_c.jpg",
       "https://live.staticflickr.com/65535/54764300448_602e2486ff_c.jpg",

@@ -2,6 +2,17 @@ import type { GalleryItem } from "./galleryItem";
 
 export const recentPaintings: GalleryItem[] = [
   {
+    paths: ["https://live.staticflickr.com/65535/55431402711_db6d613aa7_c.jpg"],
+    title: "Swans",
+    date: "July 2026",
+    medium: "Oil",
+    referenceSource: "Pinterest",
+    size: "16 x 20",
+    notes: `My dad loves impressionism, and I thought this would be the perfect painting to try it out - 
+      it's a bit different from the reference photo, but I had a lot of fun placing each tiny brush stroke. 
+      I paired it with a wooden frame and I think it complements the painting very well!`,
+  },
+  {
     paths: ["https://live.staticflickr.com/65535/54787007031_1a5c0e4fa0_c.jpg"],
     title: "Xiao Bai",
     date: "September 2025",
